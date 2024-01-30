@@ -1,10 +1,16 @@
-*{
+header, footer, table{
   
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Barlow condensed', sans-serif;
 
+
+}
+
+.bcaExtra{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
   
 
@@ -13,30 +19,130 @@ td{
 }
 
 
-@media all and (min-width: 600px) and (max-width: 1200px) {
-   
-    
-    
-    
-  *{
-      width: 580px;
-      }
-}
-
-@media only screen and (max-width: 768px) {
-  table {
-    display: block; /* La tabla se convierte en un bloque */
-    overflow-x: auto; /* Permite el scroll horizontal */
-  }
-  th, td {
-    width: auto; /* Las celdas se ajustan al contenido */
-    white-space: nowrap; /* Evita saltos de línea dentro de las celdas */
-  }
-}
 
 
 .uno:hover{
   cursor: pointer;
   background-color: rgb(129, 226, 233);
 
+}
+
+.logo{
+  color: #f8f8fa;
+  font-size: 30px;
+
+}
+.logo span{
+  color: #fdc500;
+}
+
+.menu-bar{
+  background-color: #212529;
+  height: 80px;   
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 5%;
+  position: relative;
+}
+
+.menu-bar ul{
+  list-style: none;
+  display: flex;
+}
+.menu-bar ul li{
+  padding: 10px 30px;
+  position: relative;
+}
+
+.menu-bar ul li a{
+  font-size: 20px;
+  color: #f8f8fa;
+  text-decoration: none;
+  transition: all .3s;
+
+}
+
+.menu-bar ul li a:hover{
+  color: #fdc500;
+}
+
+.fas{
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #212529;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul{
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li{
+  width: 150px;
+  padding: 10px;
+}
+.dropdown-menu-1{
+  display: none;
+}
+.dropdown-menu ul li:hover .dropdown-menu-1{
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: #212529;
+}
+
+
+
+
+
+
+
+
+
+
+.dropdown-menu-bolsa {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu-bolsa{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #212529;
+}
+
+.menu-bar ul li:hover .dropdown-menu-bolsa ul{
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu-bolsa ul li{
+  width: 150px;
+  padding: 10px;
+}
+.dropdown-menu-2{
+  display: none;
+}
+.dropdown-menu-bolsa ul li:hover .dropdown-menu-2{
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: #212529;
 }
